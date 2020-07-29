@@ -6,7 +6,7 @@ services:
    - mongodb
    - redis-server
 env:
-   - NODE_ENV=production DATABASE_LOCAL=mongodb://localhost:27017/node_redis USER=rayan PORT=3000 REDIS=redis://127.0.0.1:6379 JWT_SECERET=$2a$12$Lf2bi8/FCB/eZAcBjsft.Ooyh JWT_EXPIRES_IN=90d JWT_COOKIE_EXPIRES_IN=90
+   - NODE_ENV=development DATABASE_LOCAL=mongodb://localhost:27017/node_redis USER=rayan PORT=3000 REDIS=redis://127.0.0.1:6379 JWT_SECERET=$2a$12$Lf2bi8/FCB/eZAcBjsft.Ooyh JWT_EXPIRES_IN=90d JWT_COOKIE_EXPIRES_IN=90
 cache:
    directories:
       - node_modules
