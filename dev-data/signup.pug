@@ -1,0 +1,51 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/style.css')
+  title Blogster | My Blogs
+header.header
+  .row
+    .header__container
+      h1.header__logo-text Blogster
+      nav.header__nav
+        ul.header__nav-list
+          li.header__list-item
+            a.header__nav-link(href='/login.html')
+              | Log in
+// END OF HEADER
+// START OF MAIN ELEMENT
+main.main
+  .signup__wrapper
+    .signup__container
+      h2.signup__heading.u-margin-bottom-large
+        | Sign up for a new account
+      form#signup-form.signup-form
+        .signup-form__group
+          label.signup-form__label(for='name')
+            | Name
+          input#name.signup-form__input(type='text' required='' placeholder='Your name')
+        .signup-form__group
+          label.signup-form__label(for='email')
+            | Email
+          input#email.signup-form__input(type='email' required='' placeholder='Your email')
+        .signup-form__group
+          label.signup-form__label(for='password')
+            | Password
+          input#password.signup-form__input(type='password' required='' placeholder='••••••••')
+        .signup-form__group
+          label.signup-form__label(for='password-confirm')
+            | Password Confirm
+          input#password-confirm.signup-form__input(type='password' required='' placeholder='••••••••')
+        button.btn.btn__signup.u-margin-top-medium
+          | Sign up
+    p.signup__link
+      | Already have an account? 
+      a(href='/login.html') Log in
+// <div class="alert alert--error alert--visible">
+//
+  <div class="alert alert--success alert--visible">
+  <p class="alert__text">Blog successfully created</p>
+  </div>
+script(src='/js/setUrl.js')
+script(src='/js/bundle.js')

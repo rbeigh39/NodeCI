@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/style.css')
+  title Blogster | My Blogs
+header.header
+  .row
+    .header__container
+      h1.header__logo-text Blogster
+      nav.header__nav
+        ul.header__nav-list
+          li.header__list-item
+            a.header__nav-link(href='#') My Blogs
+          li.header__list-item
+            a#logout-btn.header__nav-link(href='#') Log out
+// END OF HEADER
+// START OF MAIN ELEMENT
+main.main
+  #my-blogs-container.row
+    .blog__container
+      h2.blog__heading.u-margin-bottom-medium
+        | My First Blog
+      p.blog__content.u-margin-bottom-medium
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        | Veritatis aperiam id iusto doloribus sit nostrum consequuntur
+        | quia cumque laudantium ullam explicabo nobis provident rerum
+        | mollitia optio vero eos rem earum facilis, labore assumenda.
+        | Ducimus vel laboriosam, earum esse aut minus, odit, tempora
+        | est commodi unde nostrum autem cumque amet placeat. Lorem
+        | ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        | aperiam id iusto doloribus sit nostrum consequuntur quia
+        | cumque laudantium ullam explicabo nobis provident rerum
+        | mollitia optio vero eos rem earum facilis.
+      a.blog__link(href='#') Read
+button.fab
+  p.fab__icon +
+.create
+  // <div class="create create__visible">
+  .create__container
+    h2.create__heading.u-margin-bottom-medium
+      | Create a new Blog
+    .create__form
+      form#new-blog-form.form
+        .form__group
+          label.form__label(for='blog-title')
+            | Blog title
+          input#blog-title.form__input-text(type='text' placeholder='Enter the blog title' required='')
+        .form__group
+          label.form__label(for='blog-content')
+            | Blog content
+          textarea#blog-content.form__input-textarea(type='text' placeholder='Write your blog content' required='')
+        .form__group
+          button.btn.btn__submit.u-margin-right-medium
+            | Create
+          a#btn-cancel.btn.btn__cancel
+            | Cancel
+// <div class="alert alert--error alert--visible">
+//
+  <div class="alert alert--success alert--visible">
+  <p class="alert__text">Blog successfully created</p>
+  </div>
+script(src='/js/setUrl.js')
+script(src='/js/bundle.js')

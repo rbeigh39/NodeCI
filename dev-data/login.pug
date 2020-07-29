@@ -1,0 +1,44 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/style.css')
+  title Blogster | My Blogs
+header.header
+  .row
+    .header__container
+      h1.header__logo-text Blogster
+      nav.header__nav
+        ul.header__nav-list
+          li.header__list-item
+            a.header__nav-link(href='/signup.html')
+              | Sign up
+// END OF HEADER
+// START OF MAIN ELEMENT
+main.main
+  .login__wrapper
+    .login__container
+      h2.login__heading.u-margin-bottom-large
+        | Log into your account
+      form#login-form.login-form
+        .login-form__group
+          label.login-form__label(for='email')
+            | Email
+          input#email.login-form__input(type='email' required='' placeholder='Your email')
+        .login__form-group
+          label.login-form__label(for='password')
+            | Password
+          input#password.login-form__input(type='password' required='' placeholder='••••••••')
+        button.btn.btn__login.u-margin-top-large
+          | Log in
+    p.login__link
+      | Dont&apos;t have an account? 
+      a(href='/signup.html') Sign up
+// <div class="alert alert--error alert--visible">
+//
+  <div class="alert alert--success alert--visible">
+  <p class="alert__text">Blog successfully created</p>
+  </div>
+script(src='/js/setUrl.js')
+script(src='/js/bundle.js')
