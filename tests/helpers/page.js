@@ -6,7 +6,7 @@ class CustomPage {
    static async build() {
       const browser = await puppeteer.launch({
          headless: true,
-         args: ['--no-sandbox', '--window-size=1920,1080'],
+         args: ['--no-sandbox', '--window-size=4000,4000'],
          defaultViewport: null
       });
 
