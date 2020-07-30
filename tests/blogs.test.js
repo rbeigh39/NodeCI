@@ -34,8 +34,9 @@ describe('When loggen in', async () => {
 
       test('Submitting and saving adds a blog to the index page', async () => {
          await page.click('.btn__submit');
-         await page.waitFor('.blog__container h2');
-         await page.waitFor('.blog__container p');
+         // await page.waitFor('.blog__container h2');
+         // await page.waitFor('.blog__container p');
+         await page.waitFor(5000);
 
          const title = await page.getContentsOf('.blog__container h2');
          const content = await page.getContentsOf('.blog__container p');
