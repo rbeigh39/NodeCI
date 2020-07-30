@@ -26,7 +26,7 @@ test('Clicking login starts authentication flow', async () => {
 
 test('When signed in, show logout button', async () => {
    await page.login();
-
+   await page.waitFor(2000);
    const text = await page.getContentsOf('#logout-btn');
 
    expect(text).toEqual('Log out');
