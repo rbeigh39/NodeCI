@@ -41,7 +41,7 @@
       "path-parser": "^2.0.2",
       "pug": "^2.0.4",
       "puppeteer": "^1.20.0",
-      "redis": "^2.8.0",
+      "redis": "^3.1.1",
       "uuid": "^3.2.1",
       "validator": "^13.0.0"
    }
